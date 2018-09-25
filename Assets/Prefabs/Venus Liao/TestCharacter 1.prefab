@@ -26,6 +26,7 @@ GameObject:
   - component: {fileID: 120726226898668640}
   - component: {fileID: 114342368345075724}
   - component: {fileID: 114965549278901230}
+  - component: {fileID: 114485550155583626}
   m_Layer: 0
   m_Name: TestCharacter 1
   m_TagString: Untagged
@@ -127,12 +128,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 525bb2d5d87e6514686a4b2dab92b7c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  characterName: 
+  characterName: Rhark
   debugText: 
   speedMultiplier: 1
   decelerationMultiplier: 0.9
   damageMultiplier: 1
   target: {x: 0, y: 0, z: 0}
+--- !u!114 &114485550155583626
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1365437782123594}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 853ba5ae9afc2424d80a74ea8ed96f47, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MoveSpeed: 10
 --- !u!114 &114965549278901230
 MonoBehaviour:
   m_ObjectHideFlags: 1
