@@ -1,8 +1,6 @@
 ﻿using System;
 using UnityEngine;
-using System.Collections;
 using DG.Tweening;
-using JMiles42;
 
 [RequireComponent(typeof(LineRenderer))]
 public class Health : MonoBehaviour
