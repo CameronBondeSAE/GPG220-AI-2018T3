@@ -28,13 +28,17 @@ public class CharacterAI : MonoBehaviour
         //'Addforce' is a world-based force (think wind)
 		GetComponent<Rigidbody>().AddRelativeForce(transform.forward);
         //transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.Euler(RotateForce), Time.fixedDeltaTime);
-        if (Physics.Raycast(transform.position, transform.TransformDirection(transform.forward), out hit, MoveSpeed))
+		Vector3 transformDirection = transform.forward;
+
+
+		if (Physics.Raycast(transform.position, transformDirection, out hit, MoveSpeed))
         {
+			Debug.DrawRay(transform.position, transformDirection, Color.red);
             //Debug.Log("Hit");
-            //ForwardForce.x = MoveSpeed;
-            transform.Rotate(RotateForce);
+			//ForwardForce.x = MoveSpeed;
+			transform.Rotate(RotateForce);
             //RotateForce.y -= 10;
         }
-        Debug.DrawRay(transform.position, transform.TransformDirection(transform.forward)*5, Color.green);
+//        Debug.DrawRay(transform.position, transform.TransformDirection(transform.forward)*5, Color.green);
 	}
 }
