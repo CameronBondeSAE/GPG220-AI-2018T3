@@ -5,7 +5,7 @@ using UnityEngine;
 public class Sensor : MonoBehaviour
 {
 	public float distance;
-	public float speed;
+	public Vector3 speed;
 	private RaycastHit hitInfo;
 	private Ray ray;
 
@@ -28,7 +28,8 @@ public class Sensor : MonoBehaviour
 		if (hitInfo.transform)
 		{
 //			print("HITTING");
-			rb.transform.Rotate(0,speed,0);
+			rb.transform.Rotate(speed.x, speed.y, 0);
+			rb.AddRelativeForce(0,0,speed.z * (distance - hitInfo.distance));
 		}
 	}
 }
