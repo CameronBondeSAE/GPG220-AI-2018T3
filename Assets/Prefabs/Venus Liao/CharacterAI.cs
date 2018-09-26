@@ -6,6 +6,8 @@ public class CharacterAI : MonoBehaviour
 {
 	public float MoveSpeed;
     public float RotateSpeed;
+    public float RaycastMultiplier;
+    public float DistanceScaler;
 
 	private Vector3 ForwardForce;
     private Vector3 RotateForce;
@@ -25,15 +27,16 @@ public class CharacterAI : MonoBehaviour
 	{
 		//Vector3 ProjectedLocation = transform.position + ForwardForce;
 
-        //'Addforce' is a world-based force (think wind)
-		GetComponent<Rigidbody>().AddRelativeForce(transform.forward);
+		GetComponent<Rigidbody>().AddRelativeForce(transform.forward * MoveSpeed);
+            //'Addforce' is a world-based force (think wind)
+
         //transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.Euler(RotateForce), Time.fixedDeltaTime);
-		Vector3 transformDirection = transform.forward;
+        Vector3 transformDirection = transform.forward;
 
-
-		if (Physics.Raycast(transform.position, transformDirection, out hit, MoveSpeed))
+        Debug.DrawRay(transform.position, transformDirection, Color.red);
+        if (Physics.Raycast(transform.position, transformDirection, out hit, DistanceScaler * RaycastMultiplier))
         {
-			Debug.DrawRay(transform.position, transformDirection, Color.red);
+			//Debug.DrawRay(transform.position, transformDirection, Color.red);
             //Debug.Log("Hit");
 			//ForwardForce.x = MoveSpeed;
 			transform.Rotate(RotateForce);
