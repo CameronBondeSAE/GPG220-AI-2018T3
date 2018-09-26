@@ -2033,7 +2033,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 605941904}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -41.9, y: 0, z: 27.1}
+  m_LocalPosition: {x: -41.9, y: 1, z: 27.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 999053748}
@@ -2360,6 +2360,10 @@ Prefab:
     - target: {fileID: 11400000, guid: 49a0e923d39ec3c4c8bb97699e2f2903, type: 2}
       propertyPath: m_LockCursor
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: 49a0e923d39ec3c4c8bb97699e2f2903, type: 2}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 49a0e923d39ec3c4c8bb97699e2f2903, type: 2}
@@ -4810,26 +4814,6 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4208641068179064, guid: 22bba6848e160b4419004708de7217ca, type: 2}
       propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114485550155583626, guid: 22bba6848e160b4419004708de7217ca,
-        type: 2}
-      propertyPath: RotateSpeed
-      value: 20
-      objectReference: {fileID: 0}
-    - target: {fileID: 114485550155583626, guid: 22bba6848e160b4419004708de7217ca,
-        type: 2}
-      propertyPath: MoveSpeed
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 54124299630259938, guid: 22bba6848e160b4419004708de7217ca,
-        type: 2}
-      propertyPath: m_Constraints
-      value: 80
-      objectReference: {fileID: 0}
-    - target: {fileID: 54124299630259938, guid: 22bba6848e160b4419004708de7217ca,
-        type: 2}
-      propertyPath: m_AngularDrag
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []

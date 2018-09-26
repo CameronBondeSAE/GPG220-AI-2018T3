@@ -97,12 +97,12 @@ Rigidbody:
   m_GameObject: {fileID: 1365437782123594}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
+  m_Drag: 5
+  m_AngularDrag: 5
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 80
   m_CollisionDetection: 0
 --- !u!65 &65490490478563006
 BoxCollider:
@@ -160,8 +160,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 853ba5ae9afc2424d80a74ea8ed96f47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MoveSpeed: 10
-  RotateSpeed: 12
+  MoveSpeed: 5
+  RotateSpeed: 1
+  RaycastMultiplier: 5
+  DistanceScaler: 5
 --- !u!114 &114965549278901230
 MonoBehaviour:
   m_ObjectHideFlags: 1
