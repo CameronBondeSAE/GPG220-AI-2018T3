@@ -27,7 +27,7 @@ public class CharacterAI : MonoBehaviour
 	{
 		//Vector3 ProjectedLocation = transform.position + ForwardForce;
 
-		GetComponent<Rigidbody>().AddRelativeForce(transform.forward * MoveSpeed);
+		GetComponent<Rigidbody>().AddRelativeForce(Vector3.forward * MoveSpeed);
             //'Addforce' is a world-based force (think wind)
 
         //transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.Euler(RotateForce), Time.fixedDeltaTime);
