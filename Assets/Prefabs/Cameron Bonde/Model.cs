@@ -8,6 +8,7 @@ namespace Cam
 
 	public class Model : CharacterBase
 	{
+		public float speed;
 		public bool IsEnemyAngry { get; set; }
 
 		public override void Ability1()
@@ -31,7 +32,7 @@ namespace Cam
 		// Update is called once per frame
 		void Update()
 		{
-
+			GetComponent<Rigidbody>().AddRelativeForce(0,0,speed);
 		}
 	}
 
