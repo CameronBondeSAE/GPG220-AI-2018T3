@@ -1231,31 +1231,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 8
       objectReference: {fileID: 0}
-    - target: {fileID: 114300768581632622, guid: ffa5f931d072fb64eb868e061575071e,
-        type: 2}
-      propertyPath: MoveSpeed
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 114300768581632622, guid: ffa5f931d072fb64eb868e061575071e,
-        type: 2}
-      propertyPath: RotateSpeed
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 114300768581632622, guid: ffa5f931d072fb64eb868e061575071e,
-        type: 2}
-      propertyPath: RaycastMultiplier
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 114300768581632622, guid: ffa5f931d072fb64eb868e061575071e,
-        type: 2}
-      propertyPath: DistanceScaler
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 114172051063407358, guid: ffa5f931d072fb64eb868e061575071e,
-        type: 2}
-      propertyPath: characterName
-      value: Test
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ffa5f931d072fb64eb868e061575071e, type: 2}
   m_IsPrefabAsset: 0
@@ -3508,8 +3483,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefabs:
-  - {fileID: 1159658488830318, guid: bac0700aea0c6b0448921f99c263eeca, type: 2}
-  maxClones: 0
+  - {fileID: 1562236367602614, guid: ffa5f931d072fb64eb868e061575071e, type: 2}
+  maxClones: 50
   arenaSize: 35
   timedSpawnInterval: 0
   checkForEmptySpace: 1
@@ -3566,26 +3541,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1441725953 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1562236367602614, guid: ffa5f931d072fb64eb868e061575071e,
-    type: 2}
-  m_PrefabInternal: {fileID: 386119439}
---- !u!54 &1441725962
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1441725953}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 2
-  m_AngularDrag: 5
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 80
-  m_CollisionDetection: 0
 --- !u!1 &1464189140
 GameObject:
   m_ObjectHideFlags: 0
