@@ -41,8 +41,9 @@ GameObject:
   - component: {fileID: 136007480359389084}
   - component: {fileID: 23132878005042614}
   - component: {fileID: 54037106090801572}
-  - component: {fileID: 114229696144282230}
   - component: {fileID: 114793806981062182}
+  - component: {fileID: 114388825999074744}
+  - component: {fileID: 114229696144282230}
   - component: {fileID: 114684517760590826}
   - component: {fileID: 114656462505112506}
   - component: {fileID: 114723382588977928}
@@ -108,7 +109,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1159658488830318}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 18.874386, y: 1, z: -8.8308735}
+  m_LocalPosition: {x: 28.6, y: 1, z: -3.68}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4771647051529832}
@@ -295,6 +296,8 @@ MonoBehaviour:
   distance: 8
   speed: {x: 0, y: -1, z: -1000}
   rb: {fileID: 54037106090801572}
+  mainTransform: {fileID: 0}
+  t: {fileID: 0}
 --- !u!114 &114229696144282230
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -313,6 +316,22 @@ MonoBehaviour:
   ability4Key: 101
   ability5Key: 102
   mainCamera: {fileID: 0}
+--- !u!114 &114388825999074744
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1159658488830318}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8471732199156f54cbca6111884c7904, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  amount: 100
+  maxAmount: 100
+  lastHealingDealer: {fileID: 0}
+  lastDamagingDealer: {fileID: 0}
+  lastHealthChangedAmount: 0
 --- !u!114 &114656462505112506
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -358,8 +377,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   distance: 5
-  speed: {x: 0, y: 2.5, z: 0}
+  speed: {x: 0, y: 2.5, z: -600}
   rb: {fileID: 54037106090801572}
+  mainTransform: {fileID: 0}
+  t: {fileID: 0}
 --- !u!114 &114723382588977928
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -407,8 +428,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   distance: 5
-  speed: {x: 0, y: -2.5, z: 0}
+  speed: {x: 0, y: -2.5, z: -600}
   rb: {fileID: 54037106090801572}
+  mainTransform: {fileID: 0}
+  t: {fileID: 0}
 --- !u!136 &136007480359389084
 CapsuleCollider:
   m_ObjectHideFlags: 1

@@ -8,6 +8,7 @@ public class CameraZoomer : MonoBehaviour
 	private float normalFov;
 	public float zoomFov;
 	public float zoomSpeed;
+	public float speed;
 
 	// Use this for initialization
 	void Start()
@@ -27,5 +28,6 @@ public class CameraZoomer : MonoBehaviour
 			cam.fieldOfView = Mathf.Lerp(cam.fieldOfView, normalFov, zoomSpeed * Time.deltaTime);
 		}
 
+		transform.Translate(Input.GetAxis("Horizontal") * speed * Time.deltaTime, 0, Input.GetAxis("Vertical")*speed * Time.deltaTime);
 	}
 }

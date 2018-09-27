@@ -10,25 +10,32 @@ public class Sensor : MonoBehaviour
 	private Ray ray;
 
 	public Rigidbody rb; // HACK the sensor shouldn't really be doing direct manipulation
+	public Transform mainTransform;
+	public Transform t;
 
 	// Use this for initialization
 	void Start()
 	{
+		Physics.autoSyncTransforms = false;
+
 		ray = new Ray();
+
+		mainTransform = rb.transform;
+		t = transform;
 	}
 
 	// Update is called once per frame
 	void Update()
 	{
-		ray.direction = transform.forward;
-		ray.origin = transform.position;
+		ray.direction = t.forward;
+		ray.origin = t.position;
 
 		Physics.Raycast(ray, out hitInfo, distance);
 
-		if (hitInfo.transform)
+		if (hitInfo.collider)
 		{
 //			print("HITTING");
-			rb.transform.Rotate(speed.x, speed.y, 0);
+			mainTransform.Rotate(speed.x, speed.y, 0);
 			rb.AddRelativeForce(0,0,speed.z * (distance - hitInfo.distance));
 		}
 	}
