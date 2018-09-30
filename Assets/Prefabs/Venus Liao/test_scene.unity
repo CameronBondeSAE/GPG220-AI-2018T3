@@ -736,6 +736,22 @@ Mesh:
   m_MeshMetrics[0]: 1
   m_MeshMetrics[1]: 1
   m_MeshOptimized: 0
+--- !u!1 &269596266 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1562236367602614, guid: ffa5f931d072fb64eb868e061575071e,
+    type: 2}
+  m_PrefabInternal: {fileID: 386119439}
+--- !u!114 &269596267
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 269596266}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 905fc2472b2106d40963f824cd053e5e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &271122516
 GameObject:
   m_ObjectHideFlags: 0
@@ -3192,6 +3208,7 @@ MonoBehaviour:
   cam: {fileID: 307727008}
   zoomFov: 15
   zoomSpeed: 8.91
+  speed: 0
 --- !u!43 &1283547185
 Mesh:
   m_ObjectHideFlags: 0

@@ -10,6 +10,12 @@ public class OwnSpace : MonoBehaviour
 
         Neighbour.Add(new Neighbours("Rhark", 2));
         Neighbour.Add(new Neighbours("Sympul", 1));
+        Neighbour.Remove()
+
+        foreach (Neighbours chara in Neighbour)
+        {
+            print(chara.NeighbourName);
+        }
     }
 
 }
