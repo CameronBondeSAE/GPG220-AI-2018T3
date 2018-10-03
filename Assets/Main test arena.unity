@@ -2363,7 +2363,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100004, guid: 49a0e923d39ec3c4c8bb97699e2f2903, type: 2}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 49a0e923d39ec3c4c8bb97699e2f2903, type: 2}
@@ -3103,6 +3103,7 @@ MonoBehaviour:
   cam: {fileID: 307727008}
   zoomFov: 15
   zoomSpeed: 8.91
+  speed: 20
 --- !u!43 &1283547185
 Mesh:
   m_ObjectHideFlags: 0
@@ -3442,7 +3443,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefabs:
   - {fileID: 1159658488830318, guid: bac0700aea0c6b0448921f99c263eeca, type: 2}
-  maxClones: 500
+  maxClones: 10
   arenaSize: 35
   timedSpawnInterval: 0
   checkForEmptySpace: 1
