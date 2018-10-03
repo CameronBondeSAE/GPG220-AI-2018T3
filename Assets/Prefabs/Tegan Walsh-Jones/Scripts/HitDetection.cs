@@ -17,12 +17,16 @@ public class HitDetection : MonoBehaviour
 	void Start ()
 	{
 		rotationVector.y = rotationSpeed;
+
+		// Debug.DrawRay(character.transform.position, Vector3.forward, Color.magenta);
 	}
 	
 	// Update is called once per frame
 	void Update ()
 	{
-		if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out rayHit, rayDistance * rayScale))
+		Vector3 forward = transform.forward;
+
+		if (Physics.Raycast(transform.position, forward, out rayHit, rayDistance * rayScale))
 		{
 			character.GetComponent<Rigidbody>().transform.Rotate(rotationVector);
 
