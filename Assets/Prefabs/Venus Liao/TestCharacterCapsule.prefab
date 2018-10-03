@@ -43,6 +43,7 @@ GameObject:
   - component: {fileID: 114466132881574544}
   - component: {fileID: 114300768581632622}
   - component: {fileID: 54182292746219734}
+  - component: {fileID: 114424296166785130}
   m_Layer: 0
   m_Name: TestCharacterCapsule
   m_TagString: Untagged
@@ -82,6 +83,35 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &1895658487816722
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4165389098093620}
+  - component: {fileID: 135685664643501028}
+  m_Layer: 0
+  m_Name: OwnSpace
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4165389098093620
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1895658487816722}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 2.7617114, y: 2.7617114, z: 2.7617114}
+  m_Children: []
+  m_Father: {fileID: 4572274771653230}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4391069112574036
 Transform:
   m_ObjectHideFlags: 1
@@ -108,6 +138,7 @@ Transform:
   - {fileID: 4391069112574036}
   - {fileID: 4619076622325810}
   - {fileID: 4766796436390394}
+  - {fileID: 4165389098093620}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -223,6 +254,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MoveSpeed: 5
+--- !u!114 &114424296166785130
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1562236367602614}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 905fc2472b2106d40963f824cd053e5e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114466132881574544
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -295,13 +337,25 @@ MonoBehaviour:
   amount: 100
   maxEnergy: 100
   regenEnergySpeed: 1
+--- !u!135 &135685664643501028
+SphereCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1895658487816722}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!136 &136344997553633564
 CapsuleCollider:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1562236367602614}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 9f2b39fe187b32247a1bd655f214d847, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   m_Radius: 0.5
