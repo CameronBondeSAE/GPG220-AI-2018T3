@@ -26,7 +26,7 @@ public class Feeler : MonoBehaviour
         if(Physics.Raycast(transform.position, forwardDirection, out hit, RaycastDistance * RaycastScaler))
         {
             PlayerChara.GetComponent<Rigidbody>().transform.Rotate(TurnVector);
-            Debug.Log("HIT");
+            //Debug.Log("HIT");
         }
 	}
 }
