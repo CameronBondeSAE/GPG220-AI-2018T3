@@ -8,6 +8,7 @@ TagManager:
   - AI
   - Floor
   - Obstacle
+  - Character
   layers:
   - Default
   - TransparentFX
