@@ -4,24 +4,26 @@ using UnityEngine;
 
 public class OwnSpace : MonoBehaviour
 {
+<<<<<<< HEAD
     private List<CharacterBase> characters;
 
+=======
+    private List<Neighbours> Neighbour;
+>>>>>>> 39b44af4c35db3275068a0efd0aad0b26d033609
     void Start()
     {
         List<CharacterBase> characters = new List<CharacterBase>();
 
-        /*Neighbour.Add(new Neighbours("Rhark", 2));
+        /*
         Neighbour.Add(new Neighbours("Sympul", 1));
         Neighbour.Remove()
 
-        foreach (Neighbours chara in Neighbour)
-        {
-            print(chara.NeighbourName);
-        }*/
+        */
     }
 
     public void OnTriggerEnter(Collider other)
     {
+<<<<<<< HEAD
         if (other.tag == "Character")
         {
             characters.Add(other.GetComponent<CharacterBase>());
@@ -29,6 +31,20 @@ public class OwnSpace : MonoBehaviour
             {
                 print(chara.characterName);
             }
+=======
+        if (other.tag == Character)
+        {
+            string NearbyName;
+            NearbyName = other.GetComponent<CharacterBase>().characterName;
+            print(NearbyName);
+
+            /*Neighbour.Add(new Neighbours(NearbyName, 0));
+
+            foreach (Neighbours chara in Neighbour)
+            {
+                print(chara.NeighbourName);
+            }*/
+>>>>>>> 39b44af4c35db3275068a0efd0aad0b26d033609
         }
     }
 }
