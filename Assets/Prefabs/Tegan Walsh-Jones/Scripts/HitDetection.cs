@@ -5,6 +5,7 @@ using UnityEngine;
 public class HitDetection : MonoBehaviour
 {
 	public GameObject character;
+	public GameObject feeler;
 
 	public float rotationSpeed;
 	private Vector3 rotationVector;
@@ -17,8 +18,6 @@ public class HitDetection : MonoBehaviour
 	void Start ()
 	{
 		rotationVector.y = rotationSpeed;
-
-		// Debug.DrawRay(character.transform.position, Vector3.forward, Color.magenta);
 	}
 	
 	// Update is called once per frame
@@ -32,5 +31,7 @@ public class HitDetection : MonoBehaviour
 
 			Debug.Log("Something was hit");
 		}
+
+		Debug.DrawRay(feeler.transform.position, Vector3.forward, Color.magenta);
 	}
 }
