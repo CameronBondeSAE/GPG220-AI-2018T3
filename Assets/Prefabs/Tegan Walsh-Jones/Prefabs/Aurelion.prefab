@@ -43,6 +43,12 @@ GameObject:
   - component: {fileID: 54042835695992654}
   - component: {fileID: 114285865593650916}
   - component: {fileID: 114896085926234556}
+  - component: {fileID: 114340655270510506}
+  - component: {fileID: 114793625681860088}
+  - component: {fileID: 114243515807063162}
+  - component: {fileID: 114781825290424990}
+  - component: {fileID: 114974536451258648}
+  - component: {fileID: 114044000545660940}
   m_Layer: 0
   m_Name: Aurelion
   m_TagString: Untagged
@@ -250,6 +256,37 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &114044000545660940
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1229185239029882}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9b2973880e04174ea4e7a00a7f487c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  character: {fileID: 0}
+  rotationSpeed: 0
+  rayScale: 0
+--- !u!114 &114243515807063162
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1229185239029882}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 525bb2d5d87e6514686a4b2dab92b7c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterName: 
+  debugText: 
+  speedMultiplier: 1
+  decelerationMultiplier: 0.9
+  damageMultiplier: 1
+  target: {x: 0, y: 0, z: 0}
 --- !u!114 &114285865593650916
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -270,6 +307,49 @@ MonoBehaviour:
   disableAction: 0
   _graph: {fileID: 0}
   _blackboard: {fileID: 114896085926234556}
+--- !u!114 &114340655270510506
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1229185239029882}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8471732199156f54cbca6111884c7904, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  amount: 100
+  maxAmount: 100
+  lastHealingDealer: {fileID: 0}
+  lastDamagingDealer: {fileID: 0}
+  lastHealthChangedAmount: 0
+--- !u!114 &114781825290424990
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1229185239029882}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fead1abb25e29f429907e32d565a0e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 0
+  rb: {fileID: 0}
+--- !u!114 &114793625681860088
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1229185239029882}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7796df6e67662e74ea16af2eb800690a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  amount: 100
+  maxEnergy: 100
+  regenEnergySpeed: 1
 --- !u!114 &114896085926234556
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -283,6 +363,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _serializedBlackboard: '{"_variables":{}}'
   _objectReferences: []
+--- !u!114 &114974536451258648
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1229185239029882}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a193cdb69b764a4790d522229146109, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterBases: []
 --- !u!135 &135209121557253660
 SphereCollider:
   m_ObjectHideFlags: 1
