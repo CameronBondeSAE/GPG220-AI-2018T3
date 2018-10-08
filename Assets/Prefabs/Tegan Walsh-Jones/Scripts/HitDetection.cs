@@ -5,7 +5,7 @@ using UnityEngine;
 public class HitDetection : MonoBehaviour
 {
 	public GameObject character;
-	public GameObject feeler;
+	// public GameObject feeler;
 
 	public float rotationSpeed;
 	private Vector3 rotationVector;
@@ -23,15 +23,15 @@ public class HitDetection : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
 	{
-		Vector3 forward = transform.forward;
+		Vector3 fwd = transform.forward;
 
-		if (Physics.Raycast(transform.position, forward, out rayHit, rayDistance * rayScale))
+		if (Physics.Raycast(transform.position, fwd, out rayHit, rayDistance * rayScale))
 		{
 			character.GetComponent<Rigidbody>().transform.Rotate(rotationVector);
-
+			
 			Debug.Log("Something was hit");
 		}
 
-		Debug.DrawRay(feeler.transform.position, Vector3.forward, Color.magenta);
+		// Debug.DrawRay(feeler.transform.position, Vector3.forward, Color.magenta);
 	}
 }
