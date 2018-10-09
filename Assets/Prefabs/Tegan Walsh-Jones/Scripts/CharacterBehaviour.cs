@@ -5,7 +5,7 @@ using UnityEngine;
 public class CharacterBehaviour : MonoBehaviour
 {
 	public float moveSpeed;
-	public Rigidbody rb;
+	private Rigidbody rb;
 
 	// Use this for initialization
 	void Start ()
