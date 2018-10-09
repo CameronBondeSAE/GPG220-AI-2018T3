@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class OwnSpace : MonoBehaviour
+public class OwnSpaceRedo : MonoBehaviour
 {
     private List<CharacterBase> characters;
 
@@ -19,14 +19,14 @@ public class OwnSpace : MonoBehaviour
 
     public void OnTriggerEnter(Collider other)
     {
-
         if (other.tag == "Character")
         {
-            characters.Add(other.GetComponent<CharacterBase>());
+            characters.Add(other.gameObject.GetComponent<CharacterBase>());
             foreach (CharacterBase chara in characters)
             {
                 print(chara.characterName);
             }
+            //Debug.Log("Hello World");
         }
     }
 }
