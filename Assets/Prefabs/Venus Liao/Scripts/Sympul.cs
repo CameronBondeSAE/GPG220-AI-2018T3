@@ -43,6 +43,19 @@ public class Sympul : MonoBehaviour
     }
     public bool _withinRange;
 
+    public bool EnoughAllies
+    {
+        get
+        {
+            return _enoughAllies;
+        }
+        set
+        {
+            _enoughAllies = value;
+        }
+    }
+    public bool _enoughAllies;
+
 	// Use this for initialization
 	void Start ()
     {

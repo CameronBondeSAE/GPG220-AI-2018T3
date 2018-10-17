@@ -56,10 +56,23 @@ public class Sakon : MonoBehaviour
     }
     public int _totalAllies;
 
+    public bool EnoughAllies
+    {
+        get
+        {
+            return _enoughAllies;
+        }
+        set
+        {
+            _enoughAllies = value;
+        }
+    }
+    public bool _enoughAllies;
+
 	// Use this for initialization
 	void Start ()
     {
-        _regenHealth = 10 * _totalAllies;
+        //_regenHealth = 10 * _totalAllies;
 	}
 	
 	// Update is called once per frame
